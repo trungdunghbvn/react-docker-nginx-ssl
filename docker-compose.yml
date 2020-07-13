@@ -1,0 +1,28 @@
+version: '3.8'
+services:
+    node:
+        build: .
+        stdin_open: true
+        tty: true
+        env_file:
+            .env
+        volumes:
+            - "/app/node_modules" 
+            - ".:/app"
+        networks:
+            - app-network
+    webserver:
+        image: trungdunghbvn/nginx-ssl:v1
+        container_name: webserver
+        restart: unless-stopped
+        ports: 
+            - "80:80"
+            - "443:443"
+            # - "3000:3000"
+        depends_on:
+          - node
+        networks:
+          - app-network        
+networks:
+    app-network:
+     driver: bridge
