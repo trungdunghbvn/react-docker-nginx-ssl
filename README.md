@@ -2,10 +2,14 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Configure Your Computer Host File To Trust Domain
 
-sudo nano /etc/hosts;
+sudo nano /etc/hosts
+
 ...
- 127.0.0.1       mydomain.com
+
+127.0.0.1       mydomain.com
+
 ...
+
 
 ### Start
 
