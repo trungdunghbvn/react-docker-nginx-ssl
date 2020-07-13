@@ -5,11 +5,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 Next we’ll configure out domain mydomain.com to point to localhost or more specifically 127.0.0.1. You’ll need root access for this, with you password, by modifying the hosts file. Make sure to open a new Terminal tab or window, and run:
 
 
-    `sudo nano /etc/hosts`
+    sudo nano /etc/hosts
 
 File: `/etc/hosts`
 
-    `
+    
         ##
         # Host Database
         #
@@ -20,7 +20,7 @@ File: `/etc/hosts`
         255.255.255.255 broadcasthost
         ::1             localhost
         127.0.0.1       mydomain.com
-    `
+    
 
 
 ### Start
